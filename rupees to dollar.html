@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUPEES TO DOLLAR</title>
+</head>
+<body>
+    <style>
+        #had{
+            text-align: center;
+            border: 3px solid black;
+            padding: 30px;
+            margin: 100px;
+            font-size: 30px;
+            font-weight: bold;
+            background-color: lightslategray;
+        }
+        .input{
+            font-size: 25px;
+            background-color: ivory;
+            padding: 10px;
+            margin: 20px;
+        }
+        h1{
+            text-align: center;
+            /* display: inline; */
+            background-color: darkgrey;
+        }
+        body{
+            /* background-image: url(sky.jfif) ; */
+            /* background-repeat: no-repeat; */
+            /* background-repeat: repeat-x; */
+            /* margin-top: 50%; */
+
+            /* background-repeat:  */
+            /* width: 100%; */
+            background-image: url(sky.jfif);
+            background-size: 1920px,932px ;
+        background-clip: border-box;
+        background-repeat: no-repeat;
+            /* background-image: hight = 120px; */
+        }
+        
+    </style>
+    <h1>Rupess to dollar </h1>
+    <div id="had">
+        <div>
+<!-- <img src="sky.jfif" width="1920" height="932" alt=""> -->
+<label> Rupees:</label><input id="inp1" onmouseover="bg()" onclick="btn1()" class = "input" type="number">
+<label> dollar:</label><input id="inp2" onclick="btn3()" class = "input" type="number">
+
+<img src="download(1).jpg" class="img-fluid" alt="error">,
+
+        </div>
+
+
+
+
+
+    </div>
+    <script>
+        let rupees = document.getElementById("inp1")
+        let dollar = document.getElementById("inp2")
+        rupees.addEventListener("input",function btn1(){
+          let r =  rupees.value;
+          let dollars= r*70;
+        dollar.value = dollars;})
+          dollar.addEventListener("input", function btn3(){
+            let d = dollar.value;
+            console.log(d)
+            let rupee = d / 70
+            rupees.value = rupee
+ })
+ let b = document.getElementById("inp1")
+ b.addEventListener("mouseover", function bg() {
+    this. style.background = "red"
+    
+ })
+ console.log(innerHeight)
+        
+        
+ 
+    
+    
+    </script>
+</body>
+</html>
